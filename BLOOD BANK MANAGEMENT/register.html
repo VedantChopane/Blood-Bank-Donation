@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header id="HEADER">
+        <div class="DIV1" style="display:inline-block;vertical-align:top;">
+            <img src="logo.jpg" alt="" width="100px">
+        </div>
+        <div style="display:inline-block">
+            <h1>Blood Bank Management System</h1>
+        </div>
+        <div style="display:inline-block;vertical-align:top;">
+            <img src="logo.jpg" alt="" width="100px">
+        </div>
+        <div class="topnav">
+            <a class="active" href="main.html">Home</a>
+            <a href="register.html">Registration</a>
+            <a href="login.html">Login</a>
+            <a href="#footer">Contact Us</a>
+            <a href="#footer">About Us</a>
+        </div>
+    </header>
+    <div class="main">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <input id="pass" type="password" name="pass" placeholder="Enter Password" required"">
+                <input id="confirm_pass" type="password" name="confirm_pass" placeholder="Confirm Password" required onkeyup="validate_password()">
+            </div>  
+            <span id="wrong_pass_alert"></span>
+            <div class="policy">
+                <input type="checkbox">
+            <h3>I accept all terms & condition</h3>
+            </div>
+            <div class="input-box button">
+                <input type="Submit" value="Register Now" onclick="wrong_pass_alert()">
+            </div>
+            <div class="text">
+                <h3>Already have an account? <a href="#">Login now</a></h3>
+            </div>
+        </form>
+    </div>
+    <script>
+        function validate_password() {
+ 
+            var pass = document.getElementById('pass').value;
+            var confirm_pass = document.getElementById('confirm_pass').value;
+            if (pass != confirm_pass) {
+                document.getElementById('wrong_pass_alert').style.color = 'red';
+                document.getElementById('wrong_pass_alert').innerHTML
+                  = '☒ Use same password';
+                document.getElementById('create').disabled = true;
+                document.getElementById('create').style.opacity = (0.4);
+            } else {
+                document.getElementById('wrong_pass_alert').style.color = 'green';
+                document.getElementById('wrong_pass_alert').innerHTML =
+                    '🗹 Password Matched';
+                document.getElementById('create').disabled = false;
+                document.getElementById('create').style.opacity = (1);
+            }
+        }
+ 
+        function wrong_pass_alert() {
+            if (document.getElementById('pass').value != "" &&
+                document.getElementById('confirm_pass').value != "") {
+                alert("Your response is submitted");
+            } else {
+                alert("Please fill all the fields");
+            }
+        }
+    </script>
+    <footer class="foot">
+        <div id="footer">
+            <p><b class="fh"><u>About Us</u></b><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem
+                velit
+                ut, ducimus dignissimos neque recusandae nobis dolorum obcaecati id tempora ullam veritatis iure?
+                Vero
+                ipsum, quia aspernatur alias in quisquam a adipisci nemo aliquid fugit. Accusantium voluptates
+                cumque ea
+                tenetur dignissimos. Iusto beatae aspernatur error molestiae nemo, totam veniam eveniet nulla
+                adipisci,
+                impedit nesciunt. Illum magnam dolorum, dicta non blanditiis aliquid! Eaque quisquam eum quo at,
+                quaerat
+                accusamus quasi qui ea voluptatum amet placeat debitis repellat quod ipsa quidem porro quam ullam
+                asperiores adipisci veniam, accusantium ipsam! Libero est eaque ex veniam laudantium enim odio
+                voluptatibus natus atque corrupti!
+            </p>
+        </div>
+
+        <p><b class="fh"><u>Contact Us</u></b><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, vitae nulla
+            beatae ratione a magni!
+        </p>
+    </footer>
+</body>
+</html>

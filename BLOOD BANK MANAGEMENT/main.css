@@ -1,0 +1,156 @@
+body{
+    margin: 0%;
+    padding: 5px;
+}
+#HEADER{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5px;
+    position: fixed;
+    width: 1400px;
+}
+.topnav {
+    background-color: rgba(244, 62, 17, 0.864);
+    overflow: hidden;
+    position: sticky;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:rgba(244, 62, 17, 0.750);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgba(244, 62, 17, 0.864);
+    color: white;
+  }
+
+.DIV2{
+    margin-top: 130px;
+}
+
+#tab1{
+    margin-top: 30px;
+    margin-left: 75px;
+    background-color: azure;
+}
+#r1{
+    background-color: rgb(177, 8, 8);
+    color: white;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#r2{
+    font-size: 17px;
+    color: rgb(255, 0, 0);
+}
+#rx{
+    text-align: center;
+}
+#head2{
+    color: rgb(194, 3, 3);
+    padding-top: 5px;
+    padding-left: 350px;
+    font-size: 40px;
+    background-color:blanchedalmond;
+}
+.checklist{
+    list-style: outside none;
+    background: url(icon_checkmark.jpg) no-repeat;
+    background-position: 0 4px;
+    padding-left: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+#ul{
+    align-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 20px;
+}
+.info{
+    background-color: blanchedalmond;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#head3{
+    background-color:blanchedalmond;
+    color: rgb(194, 3, 3);
+    padding-top: 5px;
+    padding-left: 350px;
+    padding-bottom: 2px;
+    font-size: 40px;
+}
+.types{
+    margin-top: -20px;
+    padding-top: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color:blanchedalmond;
+}
+#def{
+    font-size: 20px;
+}
+.rt{
+    color: rgb(226, 39, 39);
+    font-size: 20px;
+}
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mytabs input[type="radio"]{
+    display: none;
+}
+.mytabs label{
+    padding: 12px;
+    padding-left: 77px;
+    padding-right: 75px;
+    color:crimson;
+    font-size: 22px;
+    background:rgba(244, 206, 149, 0.911);
+    font-weight: bold;
+}
+.mytabs .tab{
+    width: 100%;
+    font-size: 20px;
+    background:blanchedalmond;
+    order: 1;
+    display: none;
+}
+.mytabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+.mytabs input[type="radio"]:checked + label{
+    background:blanchedalmond;
+}
+.foot{
+    margin-left: -150px;
+    margin-right: -150px;
+    margin-bottom: -20px;
+    background-color:rgba(244, 62, 17, 0.750);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.fh{
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
